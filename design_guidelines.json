@@ -1,0 +1,170 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "OrphanCare",
+      "persona": "The Compassionate Architect",
+      "core_values": [
+        "Transparency",
+        "Warmth",
+        "Hope",
+        "Efficiency"
+      ],
+      "emotional_tone": "Optimistic, Trustworthy, Human-Centric"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Nunito, sans-serif",
+        "body": "DM Sans, sans-serif",
+        "accent": "Caveat, cursive"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-6xl font-extrabold tracking-tight",
+        "h2": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h3": "text-3xl font-bold",
+        "h4": "text-2xl font-semibold",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground"
+      },
+      "rules": [
+        "Use 'Nunito' for all headings to convey warmth and friendliness.",
+        "Use 'DM Sans' for body text for high readability.",
+        "Use 'Caveat' sparingly for 'handwritten' notes or impact numbers to add a human touch.",
+        "Headings must never be pure black; use slate-900 or a deep brand blue."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#FF8C69",
+          "foreground": "#FFFFFF",
+          "hover": "#FF7043",
+          "description": "Warm Coral - Used for primary CTAs (Donate) and key highlights."
+        },
+        "secondary": {
+          "DEFAULT": "#4A90E2",
+          "foreground": "#FFFFFF",
+          "hover": "#357ABD",
+          "description": "Compassionate Blue - Used for trust indicators, links, and secondary actions."
+        },
+        "accent": {
+          "DEFAULT": "#FFD166",
+          "foreground": "#1A1A1A",
+          "description": "Sunny Yellow - Used for progress bars, badges, and cheerful accents."
+        },
+        "background": {
+          "DEFAULT": "#FDFBF7",
+          "paper": "#FFFFFF",
+          "subtle": "#F5F0EB"
+        },
+        "text": {
+          "primary": "#1E293B",
+          "secondary": "#64748B",
+          "muted": "#94A3B8"
+        },
+        "status": {
+          "success": "#10B981",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+          "info": "#3B82F6"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-br from-[#FDFBF7] via-[#FFF5F0] to-[#FFF0EB]",
+        "card_hover": "bg-gradient-to-b from-white to-[#FFF9F5]"
+      }
+    },
+    "spacing": {
+      "scale": "Tailwind default but amplified",
+      "container_padding": "px-4 md:px-8 lg:px-12",
+      "section_spacing": "py-16 md:py-24",
+      "component_gap": "gap-6 md:gap-8"
+    },
+    "borders": {
+      "radius": {
+        "default": "rounded-xl",
+        "card": "rounded-2xl",
+        "button": "rounded-full",
+        "input": "rounded-lg"
+      },
+      "width": "border",
+      "color": "border-stone-200"
+    },
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)]",
+      "card_hover": "shadow-[0_12px_24px_rgba(0,0,0,0.08)]",
+      "dropdown": "shadow-xl shadow-stone-200/50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-3 font-bold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5",
+      "secondary": "bg-white text-secondary border-2 border-secondary/20 hover:border-secondary hover:bg-secondary/5 rounded-full px-6 py-2.5 font-semibold transition-all",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg px-4 py-2 font-medium transition-colors"
+    },
+    "cards": {
+      "orphanage": "bg-white rounded-2xl border border-stone-100 shadow-card hover:shadow-card_hover transition-all duration-300 overflow-hidden group",
+      "stat": "bg-white/60 backdrop-blur-sm rounded-xl border border-stone-200/50 p-6 hover:bg-white transition-colors",
+      "donation": "bg-white rounded-2xl border-2 border-primary/10 p-6 hover:border-primary/30 transition-colors"
+    },
+    "inputs": {
+      "default": "h-12 rounded-lg border-stone-200 bg-white px-4 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all",
+      "search": "h-14 rounded-full border-stone-200 bg-white pl-12 pr-4 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary/20"
+    }
+  },
+  "layout_strategies": {
+    "public_pages": {
+      "grid_type": "Mode A: The Tetris Grid",
+      "description": "Use asymmetrical grids for impact stories. Mix large hero images with smaller stat blocks.",
+      "container": "max-w-7xl mx-auto"
+    },
+    "dashboards": {
+      "grid_type": "Mode B: The Control Room",
+      "description": "Dense, functional grids for data. Use 'bento' style boxes for metrics.",
+      "container": "max-w-[1600px] mx-auto p-6"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain or paper textures on backgrounds to reduce digital coldness.",
+    "illustrations": "Use 3D clay-style or flat, warm vector illustrations for empty states.",
+    "micro_interactions": "Buttons scale slightly on click. Cards lift on hover. Progress bars fill with a smooth ease-out animation."
+  },
+  "assets": {
+    "images": {
+      "hero_children": {
+        "url": "https://images.unsplash.com/photo-1650498438073-e98824700b85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGRpdmVyc2UlMjBjaGlsZHJlbiUyMHBsYXlpbmclMjBvdXRkb29yc3xlbnwwfHx8fDE3NjQ2NDkzNDd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Diverse children playing in a field of flowers",
+        "usage": "Landing page hero section"
+      },
+      "orphanage_exterior": {
+        "url": "https://images.unsplash.com/photo-1631507623103-8fd8ad1f0daa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb21tdW5pdHklMjBjZW50ZXIlMjBidWlsZGluZyUyMGV4dGVyaW9yJTIwd2FybSUyMGxpZ2h0fGVufDB8fHx8MTc2NDY0OTM0OXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Modern community center building",
+        "usage": "Orphanage profile cover image"
+      },
+      "volunteers": {
+        "url": "https://images.unsplash.com/photo-1623287073837-5b07d79739a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXJzJTIwaGVscGluZyUyMGNoaWxkcmVuJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzY0NjQ5MzUyfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Volunteer helping a child learn",
+        "usage": "About us or 'Become a Volunteer' section"
+      },
+      "impact_joy": {
+        "url": "https://images.unsplash.com/photo-1759831268463-6809e1d67d27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGRpdmVyc2UlMjBjaGlsZHJlbiUyMHBsYXlpbmclMjBvdXRkb29yc3xlbnwwfHx8fDE3NjQ2NDkzNDd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Child with colorful powder on face smiling",
+        "usage": "Success stories or donation confirmation"
+      }
+    },
+    "icons": "Use 'Lucide React' with rounded stroke endings (stroke-linecap='round')."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets WCAG AA standards. Use APCA for critical text.",
+    "focus_states": "Visible focus rings (ring-2 ring-primary/50) on all interactive elements.",
+    "semantic_html": "Use proper <main>, <nav>, <article>, <section> tags."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Lorem Ipsum'. Use realistic charity copy (e.g., 'Help provide 30 meals today').",
+    "Avoid pure black (#000000). Use #1E293B or similar dark slate.",
+    "Never use transparent backgrounds for dropdowns or overlays without a blur/scrim.",
+    "All interactive elements must have a 'data-testid' attribute.",
+    "Use 'sonner' for toast notifications.",
+    "Use 'recharts' for data visualization in dashboards."
+  ]
+}
